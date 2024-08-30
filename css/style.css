@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before,
+*:hover {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#todos-container {
+  width: 25rem;
+  margin: 0% auto;
+
+  background-color: rgb(242, 242, 255);
+}
+
+.add-style-todos {
+  width: auto;
+  height: auto;
+  margin: 0% auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+#todos-js-todo li {
+  width: 25rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+  border-radius: 0.8rem;
+  background-color: rgb(240, 232, 118);
+
+}
+
+#todos-js-todo li button {
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 0 .8rem 0.8rem 0;
+
+  background-color: rgb(231, 50, 80);
+}
+
+#todos-js-todo li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 100%;
+  vertical-align: middle;
+}
